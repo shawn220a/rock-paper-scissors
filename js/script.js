@@ -6,9 +6,6 @@ var winsScore = wins[0].innerText;
 var losesScore = loses[0].innerText;
 var tiesScore = ties[0].innerText;
 
-var r;
-var p;
-
 console.log(wins);
 console.log(winsScore);
 
@@ -24,21 +21,19 @@ function testScore(){
   //what needs to be updated?
 }
 
-function rock(r) {
-  var r = document.getElementById("rockClick").value = "rock";
-  console.log(r);
-  return r;
+function rock(rock) {
+  console.log(rock);
+  // return r;
 }
 
-function paper(p) {
-  var p = document.getElementById("paperClick").value = "paper";
-  console.log(p);
-  return p;
+function paper(paper) {
+  console.log(paper);
+  // return p;
 }
 
-function scissors(s) {
-  var s = document.getElementById("scissorsClick").value = "scissors";
-  console.log(s);
-  return s;
+function scissors(scissors) {
+  console.log(scissors);
+  // return s;
 }
+
 
