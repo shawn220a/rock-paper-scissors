@@ -6,10 +6,15 @@ var winsScore = wins[0].innerText;
 var losesScore = loses[0].innerText;
 var tiesScore = ties[0].innerText;
 
+var userChoice = [];
 var compChoices = ["r", "p", "s"]
 
 console.log(wins);
 console.log(winsScore);
+console.log(loses);
+console.log(losesScore);
+console.log(ties);
+console.log(tiesScore);
 
 function addWins(currScore){
   currScore++;
@@ -23,19 +28,28 @@ function testScore(){
   //what needs to be updated?
 }
 
+// Records users choice for Rock button
 function rock(rock) {
-  console.log(rock);
-  // return r;
+  userChoice = [];
+  userChoice.push(rock);
+  console.log(userChoice)
+  return userChoice;
 }
 
+// Records users choice for Paper button
 function paper(paper) {
-  console.log(paper);
-  // return p;
+  userChoice = [];
+  userChoice.push(paper);
+  console.log(userChoice);
+  return userChoice;
 }
 
+// Records users choice for Scissors button
 function scissors(scissors) {
-  console.log(scissors);
-  // return s;
+  userChoice = [];
+  userChoice.push(scissors);
+  console.log(userChoice);
+  return userChoice;
 }
 
-console.log(compChoices)
+console.log(userChoice)
