@@ -1,0 +1,18 @@
+body {
+  background-color: blue;
+}
+
+.scoreCard {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.mainView {
+  border: 1px solid black;
+  min-height: 400px;
+  background-color: white;
+  margin-top: 10rem;
+  margin-bottom: 5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
