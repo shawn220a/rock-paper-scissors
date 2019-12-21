@@ -8,5 +8,6 @@ This is a normal gave of Tic-Tac-Toe. You will play against a computer and selec
 
 * HTML
 * CSS
+  * Bootstrap
   * SASS
 * Javascript
