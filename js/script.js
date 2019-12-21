@@ -48,8 +48,13 @@ function paper(paper) {
 function scissors(scissors) {
   userChoice = [];
   userChoice.push(scissors);
-  console.log(userChoice);
+  // console.log(userChoice);
   return userChoice;
 }
 
-console.log(userChoice)
+function c(){
+
+}
+
+
+console.log(userChoice);
