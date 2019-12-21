@@ -6,6 +6,8 @@ var winsScore = wins[0].innerText;
 var losesScore = loses[0].innerText;
 var tiesScore = ties[0].innerText;
 
+var compChoices = ["r", "p", "s"]
+
 console.log(wins);
 console.log(winsScore);
 
@@ -36,4 +38,4 @@ function scissors(scissors) {
   // return s;
 }
 
-
+console.log(compChoices)
