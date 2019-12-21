@@ -18,18 +18,29 @@
     <div class="container-fluid">
       <div class="row scoreCard">
         <div class="col">
-          <h1>Wins:</h1>
+          <h1>Wins: <span class="winsScore">0</span></h1>
         </div>
         <div class="col">
-          <h1>Loses:</h1>
+          <h1>Loses: <span class="losesScore">0</span></h1>
         </div>
         <div class="col">
-          <h1>Ties:</h1>
+          <h1>Ties: <span class="tiesScore">0</span></h1>
         </div>
       </div>
     </div>
     <div class="container mainView">
-      <p>Test</p>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg" id="rockClick" onclick="rock()">Rock</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg" id="paperClick" onclick="paper()">Paper</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg" id="scissorsClick" onclick="scissors()">Scissors</button>
+        </div>
+      </div>
+      
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -46,6 +57,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
   <footer>
     <p>Copyright 2019</p>
