@@ -6,55 +6,69 @@ var winsScore = wins[0].innerText;
 var losesScore = loses[0].innerText;
 var tiesScore = ties[0].innerText;
 
-var userChoice = [];
-var compChoices = ["r", "p", "s"]
+var yWin = winsScore;
+var yLose = losesScore;
+var yTies = tiesScore;
 
-console.log(wins);
-console.log(winsScore);
-console.log(loses);
-console.log(losesScore);
-console.log(ties);
-console.log(tiesScore);
-
-function addWins(currScore){
-  currScore++;
-  wins.addHTML(currScore);
-  return currScore;
-}
-
-function testScore(){
-  //what is the users input
-  //what to do with that input
-  //what needs to be updated?
-}
+var userChoice = "";
+var compChoices = ["r", "p", "s"];
 
 // Records users choice for Rock button
-function rock(rock) {
-  userChoice = [];
-  userChoice.push(rock);
-  console.log(userChoice)
-  return userChoice;
+function rock() {
+  userChoice = "r";
+  var comp = Math.floor(Math.random() * compChoices.length);
+  var cChoice = compChoices[comp];
+  if (cChoice === "s") {
+    win();
+  } else if (cChoice === "p") { 
+    lose();
+  } else {
+    tie();
+  };
 }
 
 // Records users choice for Paper button
-function paper(paper) {
-  userChoice = [];
-  userChoice.push(paper);
-  console.log(userChoice);
-  return userChoice;
+function paper() {
+  userChoice = "p";
+  var comp = Math.floor(Math.random() * compChoices.length);
+  var cChoice = compChoices[comp];
+  if (cChoice === "r") {
+    win();
+  } else if (cChoice === "s") {   
+    lose();
+  } else {
+    tie();
+  };
 }
 
 // Records users choice for Scissors button
-function scissors(scissors) {
-  userChoice = [];
-  userChoice.push(scissors);
-  // console.log(userChoice);
-  return userChoice;
+function scissors() {
+  userChoice = "s";
+  var comp = Math.floor(Math.random() * compChoices.length);
+  var cChoice = compChoices[comp];
+  if (cChoice === "p") {
+    win();
+  } else if (cChoice === "r") { 
+    lose();
+  } else {
+    tie();
+  };
 }
 
-function c(){
-
+// Tallies the number of wins and updates the HTML
+function win() {
+  yWin = Number(yWin) + 1;
+  wins[0].innerText = yWin;
 }
 
+// Tallies the number of loses and updates the HTML
+function lose() {
+  yLose = Number(yLose) + 1;
+  loses[0].innerText = yLose;
+}
 
-console.log(userChoice);
+// Tallies the number of ties and updates the HTML
+function tie() {
+  yTies = Number(yTies) + 1;
+  ties[0].innerText = yTies;
+}
