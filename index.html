@@ -31,14 +31,20 @@
     <div class="container mainView">
       <div class="row">
         <div class="col">
-          <button type="button" class="btn btn-primary btn-lg" id="rockClick" onclick="rock()">Rock</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="rockClick" onclick="rock()">Rock</button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-primary btn-lg" id="paperClick" onclick="paper()">Paper</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="paperClick" onclick="paper()">Paper</button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-primary btn-lg" id="scissorsClick" onclick="scissors()">Scissors</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="scissorsClick" onclick="scissors()">Scissors</button>
         </div>
+      </div>
+      <div class="row">
+        <h1>Your Pick: <span class="yourPick"></span></h1>
+      </div>
+      <div class="row">
+        <h1>Computer Pick: <span class="comPick"></span></h1>
       </div>
       
     </div>
